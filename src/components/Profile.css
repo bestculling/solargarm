@@ -84,3 +84,8 @@ img.circle {
     height: 120px;
     width: 120px;
 }
+
+.option {
+    color: #66FCF1;
+    text-shadow: 0 0 10px #2eb5db, 0 0 2px #2eb5db, 0 0 2px #2eb5db, 0 0 2px #2eb5db, 0 0 20px #2eb5db;
+}

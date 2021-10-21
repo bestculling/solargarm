@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.drop_file {
+    position: relative;
+}
+
+.drop_file input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.drop_file:hover, .drop_file.dragover {
+    opacity: 0.6;
+}
+
+.drop_file_label {
+    text-align: center;
+    color: #66FCF1;
+    padding: 10px;
+}
+
+.drop_file_label svg {
+    fill: #66FCF1;
+} 
+
+.drop_file_preview {
+    margin-top: 30px;
+}
+
+.drop-file-preview p {
+    font-weight: 500;
+}
+
+.drop_file_preview_items {
+    position: relative;
+    display: flex;
+    color: #FFF;
+    margin-bottom: 10px;
+    border: 1px solid #66FCF1;
+    padding: 15px;
+}
+
+.drop_file_preview_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.drop_file_preview_del {
+    background-color: #1F2731;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #66FCF1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.drop_file_preview_items:hover .drop_file_preview_del {
+    opacity: 1;
+}
